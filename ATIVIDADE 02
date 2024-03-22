@@ -1,0 +1,21 @@
+package Aula02;
+import java.util.Scanner;
+
+public class Atividade06 {
+public static void main (String[] args) {
+	Scanner scanner = new Scanner(System.in);
+	
+	System.out.print("Digite a nota: ");
+	int nota = scanner.nextInt();
+	
+	if(nota >= 90) {System.out.println("Aprovado, parabens");}
+	else {
+	if( nota >= 70) {
+		System.out.println("aprovado");
+	}
+	else {System.out.println("reprovado");
+	
+	}
+	scanner.close();
+}
+}}
