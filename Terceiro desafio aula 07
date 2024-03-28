@@ -1,0 +1,51 @@
+package desafio3;
+
+import java.util.Scanner;
+
+public class calculadora {
+
+    public static void main(String[] args) {
+     Scanner Scan = new Scanner(System.in);
+    
+     int A;
+     int B;
+     int adicao,subtracao,multiplicacao,divisao;
+
+     System.out.println("Digite o primeiro número: ");
+     A = Scan.nextInt();
+
+     System.out.println("Digite o Segundo número: ");
+     B = Scan.nextInt();
+
+     //operações
+
+     System.out.println("Para: adicao escolha 1, subtracao 2, multiplicacao 3, divisao 4");
+     int operações = Scan.nextInt();
+
+     switch (operações) {
+
+            case 1:
+            adicao = A + B;
+            System.out.println("Resultado: " + adicao);
+            break;
+            case 2:
+            subtracao = A - B;
+            System.out.println("Resultado: " + subtracao);
+            break;
+            case 3:
+            multiplicacao = A * B;
+            System.out.println("Resultado: " + multiplicacao);
+            break;
+            case 4:
+            divisao = A / B;
+            System.out.println("Resultado: " + divisao);
+            break;
+            
+            default:
+            System.out.println("Opção invalída");
+
+            }
+
+    Scan.close();
+          } 
+        }
