@@ -1,0 +1,25 @@
+package Aula09;
+import java.util.Scanner;
+
+public class Desafio01 {
+
+	public static void main(String[] args) {
+	Scanner scanner = new Scanner(System.in);
+	
+	System.out.println("Digite um número: ");
+    double nmr = scanner.nextDouble();
+    
+    if (nmr > 0 ) {
+    System.out.println("O número é positivo!");
+    }
+    else if (nmr < 0 ) {
+    System.out.println("O número é Negativo!");
+    }	
+    else {
+    System.out.println("O numero 0 é neutro!");
+    }
+		
+    scanner.close();
+        
+	}
+    }
